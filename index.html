@@ -1,42 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
+    <title>Adnan Saif | AI/ML Portfolio</title>
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Alex</a>
-
+        <a href="#home" class="logo">Adnan <span>Saif</span></a>
         <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#" >Services</a>
-            <a href="#" >Skills</a>
-            <a href="#" >Education</a>
-            <a href="#" >Experience</a>
-            <a href="#" >Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
         </nav>
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpg" alt="">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Alex</span></h1>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content" data-aos="fade-right" data-aos-duration="1000">
+            <h1>Hi, It's <span>Adnan Saif</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <p>Data professional with hands-on experience in machine learning, deep learning, NLP, and computer vision. Skilled in designing and deploying scalable ML pipelines to extract actionable insights and drive business outcomes.</p>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/adnan-saif-80419224a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/adnan-saif" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <a href="#" class="btn">Hire me</a>
+            <div class="btn-group">
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="#projects" class="btn btn-outline">View Projects</a>
+            </div>
+        </div>
+        <div class="home-img" data-aos="fade-left" data-aos-duration="1000">
+            <div class="img-wrapper">
+                <!-- You can add your image here -->
+                <div class="placeholder-img">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title" data-aos="fade-up">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-content" data-aos="fade-right">
+                <h3>Data Professional & AI Enthusiast</h3>
+                <p>I'm a passionate AI/ML professional with a strong foundation in computer science and a drive to solve real-world problems through innovative technology. Currently working as an AI/ML Intern at The SmartBridge, I specialize in building intelligent systems that automate complex workflows and deliver tangible business value.</p>
+                <p>With a CGPA of 8.4 and ranking 2nd in my BTech program, I combine academic excellence with practical hands-on experience in cutting-edge technologies like LangGraph, diffusion models, and GANs.</p>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8.4</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+            <div class="about-cards" data-aos="fade-left">
+                <div class="card">
+                    <i class="fas fa-robot"></i>
+                    <h4>Machine Learning</h4>
+                    <p>Expert in building and deploying ML models</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-brain"></i>
+                    <h4>Deep Learning</h4>
+                    <p>Specialized in CNNs, RNNs, Transformers</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Data Analysis</h4>
+                    <p>Power BI, Tableau, Excel expertise</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cloud"></i>
+                    <h4>MLOps</h4>
+                    <p>Docker, Flask, Streamlit deployment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2 class="section-title" data-aos="fade-up">Work <span>Experience</span></h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">August 2025 - Present</div>
+                <div class="timeline-content">
+                    <h3>AI/ML Intern</h3>
+                    <h4>The SmartBridge</h4>
+                    <ul>
+                        <li>Built an Autonomous B2B Sales Agent using LangGraph and multi-LLM reasoning to automate end-to-end lead discovery and HITL-approved email outreach</li>
+                        <li>Developed an AI Interior Design Generator leveraging diffusion models with depth and edge conditioning</li>
+                        <li>Created a Synthetic Data Generator with Python libraries and GANs, validators, and SQL storage</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">May 2025 - June 2025</div>
+                <div class="timeline-content">
+                    <h3>Data Science Intern</h3>
+                    <h4>InLight Tech</h4>
+                    <ul>
+                        <li>Developed an AI-powered voice assistant using Python, NLP, speech recognition, and TTS for real-time interaction</li>
+                        <li>Streamlined task scheduling, email parsing, and context-aware search using Wikipedia API</li>
+                        <li>Achieved 80% reduction in manual task time, accelerating information access</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title" data-aos="fade-up">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="flip-left">
+                <div class="project-img">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Advanced Driver Assistance System</h3>
+                    <div class="project-tags">
+                        <span>YOLOv8</span>
+                        <span>OpenCV</span>
+                        <span>Streamlit</span>
+                        <span>MySQL</span>
+                    </div>
+                    <p>Engineered real-time ADAS using YOLOv8 (50% mAP) for object detection and OpenCV for lane tracking at 25 FPS. Integrated voice alerts and MySQL logging for high-risk scenario monitoring.</p>
+                    <a href="#" class="project-link">GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="project-img">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Plant Disease Detection System</h3>
+                    <div class="project-tags">
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                        <span>CNN</span>
+                        <span>Streamlit</span>
+                    </div>
+                    <p>Processed and cleaned 2,500+ records from 30+ Asset Management Companies. Built a scoring system using returns, expense ratio, and fund age to rank top-performing funds.</p>
+                    <a href="#" class="project-link">GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card" data-aos="flip-left" data-aos-delay="400">
+                <div class="project-img">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Autonomous B2B Sales Agent</h3>
+                    <div class="project-tags">
+                        <span>LangGraph</span>
+                        <span>LLM</span>
+                        <span>Python</span>
+                    </div>
+                    <p>Built an autonomous agent using LangGraph and multi-LLM reasoning to automate end-to-end lead discovery, email outreach, and meeting scheduling with HITL approval.</p>
+                    <a href="#" class="project-link">GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title" data-aos="fade-up">Technical <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-category" data-aos="fade-right">
+                <h3>Languages & Libraries</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>SQL</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>TensorFlow/Keras</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>PyTorch</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>OpenCV</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 87%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category" data-aos="fade-left">
+                <h3>Machine Learning & AI</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>Deep Learning</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>NLP</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Computer Vision</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 89%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Transformers</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category" data-aos="fade-up">
+                <h3>Tools & Platforms</h3>
+                <div class="skill-tags">
+                    <span>Docker</span>
+                    <span>Git</span>
+                    <span>Flask</span>
+                    <span>Streamlit</span>
+                    <span>Power BI</span>
+                    <span>Tableau</span>
+                    <span>MongoDB</span>
+                    <span>MySQL</span>
+                    <span>Linux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2 class="section-title" data-aos="fade-up">Education & <span>Certifications</span></h2>
+        <div class="education-container">
+            <div class="education-card" data-aos="fade-right">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Bachelor of Technology</h3>
+                <h4>Computer Science and Engineering</h4>
+                <p>Jamia Hamdard University, New Delhi</p>
+                <span class="grade">CGPA: 8.4 (2nd Rank)</span>
+            </div>
+            <div class="education-card" data-aos="fade-left">
+                <i class="fas fa-diploma"></i>
+                <h3>Diploma</h3>
+                <h4>Computer Science and Engineering</h4>
+                <p>Jamia Millia Islamia University, New Delhi</p>
+                <span class="grade">CGPA: 8.2</span>
+            </div>
+        </div>
+        
+        <div class="certifications" data-aos="fade-up">
+            <h3>Certifications</h3>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>NLP in TensorFlow - DeepLearningAI</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Supervised Machine Learning - DeepLearningAI</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Python for Data Science - IBM</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Machine Learning with Python - IBM</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="achievements" data-aos="fade-up">
+            <h3>Awards & Achievements</h3>
+            <div class="achievement-list">
+                <div class="achievement-item">
+                    <i class="fas fa-trophy"></i>
+                    <p><strong>Best Project Award</strong> - Jamia Millia Islamia for Plant Disease Detection project with 89% accuracy</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-award"></i>
+                    <p><strong>Tata GenAI Data Analysis</strong> - Designed compliant GenAI strategy for risk modeling</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-award"></i>
+                    <p><strong>BCG GenAI Chatbot</strong> - Built financial chatbot with LLM for data-backed insights</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title" data-aos="fade-up">Get In <span>Touch</span></h2>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Okhla, New Delhi</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>adnansaif7474@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91-6207253518</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" data-aos="fade-left">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Adnan Saif. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
