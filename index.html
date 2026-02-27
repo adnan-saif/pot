@@ -1,199 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adnan Saif - Resume</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f6f9;
-  color: #333;
-}
-
-.container {
-  max-width: 1000px;
-  margin: auto;
-  background: #ffffff;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 3px solid #1f3c88;
-  padding-bottom: 20px;
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 32px;
-  color: #1f3c88;
-}
-
-.header p {
-  margin: 5px 0;
-  font-weight: 500;
-  color: #555;
-}
-
-.section {
-  margin-top: 35px;
-}
-
-.section h2 {
-  border-left: 5px solid #ff6b35;
-  padding-left: 10px;
-  color: #1f3c88;
-  margin-bottom: 15px;
-}
-
-.job {
-  margin-bottom: 20px;
-}
-
-.job h3 {
-  margin: 0;
-  color: #222;
-}
-
-.job span {
-  font-size: 14px;
-  color: #777;
-}
-
-ul {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-}
-
-.skill-box {
-  background: #eef2ff;
-  padding: 10px;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 14px;
-  color: #777;
-}
-
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
 </head>
 <body>
+    <header>
+        <a href="#" class="logo">Alex</a>
 
-<div class="container">
-
-  <div class="header">
-    <div>
-      <h1>Adnan Saif</h1>
-      <p>AI Engineer | Generative AI & Multi-Agent Systems Developer</p>
-    </div>
-    <div>
-      <p>📍 New Delhi, India</p>
-      <p>📧 adnansaif7474@gmail.com</p>
-      <p>🔗 github.com/adnan-saif</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Professional Summary</h2>
-    <p>
-      AI Engineer with expertise in Machine Learning, Deep Learning, NLP, Computer Vision, 
-      and Generative AI systems. Experienced in building multi-agent workflows, 
-      LLM-powered automation systems, diffusion-based models, and scalable AI pipelines.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Experience</h2>
-
-    <div class="job">
-      <h3>AI/ML Intern – The SmartBridge</h3>
-      <span>Aug 2025 – Present</span>
-      <ul>
-        <li>Built Autonomous B2B Sales Agent using LangGraph and multi-LLM reasoning.</li>
-        <li>Developed AI Interior Design Generator using diffusion models.</li>
-        <li>Created Synthetic Data Generator with GANs and SQL storage.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h3>Data Science Intern – InLighn Tech</h3>
-      <span>May 2025 – June 2025</span>
-      <ul>
-        <li>Developed AI-powered voice assistant using NLP and speech recognition.</li>
-        <li>Reduced manual workflow time by 80% through automation.</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>AI Ethics & Safety Monitor:</strong> LLM-based healthcare safety analyzer.</li>
-      <li><strong>Autonomous Multi-Agent Sales System:</strong> End-to-end AI outreach automation.</li>
-      <li><strong>ADAS System:</strong> YOLOv8 real-time object detection (50% mAP).</li>
-      <li><strong>Plant Disease Detection:</strong> CNN model with 89% accuracy (Award Winning).</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-box">Python & SQL</div>
-      <div class="skill-box">TensorFlow & PyTorch</div>
-      <div class="skill-box">LangChain & LangGraph</div>
-      <div class="skill-box">Transformers & CNNs</div>
-      <div class="skill-box">Flask & Streamlit</div>
-      <div class="skill-box">MongoDB & MySQL</div>
-      <div class="skill-box">Power BI & Tableau</div>
-      <div class="skill-box">RAG Systems</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Education</h2>
-    <p><strong>B.Tech CSE</strong> – Jamia Hamdard University (CGPA: 8.4 – 2nd Rank)</p>
-    <p><strong>Diploma CSE</strong> – Jamia Millia Islamia (CGPA: 8.2)</p>
-  </div>
-
-  <div class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>NLP in TensorFlow – DeepLearning.AI</li>
-      <li>Supervised Machine Learning – DeepLearning.AI</li>
-      <li>Python for Data Science – IBM</li>
-      <li>Machine Learning with Python – IBM</li>
-    </ul>
-  </div>
-
-  <div class="footer">
-    © 2026 Adnan Saif | AI Engineer
-  </div>
-
-</div>
-
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="#" >Services</a>
+            <a href="#" >Skills</a>
+            <a href="#" >Education</a>
+            <a href="#" >Experience</a>
+            <a href="#" >Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Alex</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
 </body>
 </html>
