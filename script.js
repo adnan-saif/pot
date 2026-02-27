@@ -243,7 +243,7 @@ style.textContent = `
     
     .particle {
         position: absolute;
-        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
         border-radius: 50%;
         pointer-events: none;
         opacity: 0.3;
